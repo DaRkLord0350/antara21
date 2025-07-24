@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-$j@js*=$niq8x=s6k1=95twid#qgkwdehb$u%xrj$yp-uloroi
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.vercel.app', '.now.sh']
 
 
 # Application definition
@@ -69,6 +69,7 @@ TEMPLATES = [
 ]
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [BASE_DIR / 'static']
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 WSGI_APPLICATION = 'Mywebsite1.wsgi.application'
